@@ -4,7 +4,7 @@ function changeColour(colour) {
     square.background = colour;
 }
 
-square.addEventListener('click', (event) => changeColour('Green'))
+square.addEventListener('click', (event) => changeColour('Green'));
 
 
 
