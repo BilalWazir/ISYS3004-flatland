@@ -5,9 +5,11 @@ function changeColour(colour) {
 }
 
 square.addEventListener('click', (event) => changeColour('Green'));
+
 /*create hover effect*/
 square.addEventListener('mouseover', (event) => changeColour('grey'));
 square.addEventListener('mouseout', (event) => changeColour('red'));
+
 
 function createBuzzwordPhrase() {
     /* See https://en.wikipedia.org/wiki/List_of_buzzwords */
@@ -21,3 +23,5 @@ function createBuzzwordPhrase() {
 
     return  buzz[idx_buz] + " " + action[idx_act] + " " + outcome[idx_out];
 }
+
+console.log(createBuzzwordPhrase())
