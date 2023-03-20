@@ -1,5 +1,7 @@
 var square = document.getElementById('square');
 
+
+
 function changeColour(colour) {
     square.style.background = colour;
 }
@@ -9,6 +11,15 @@ square.addEventListener('click', (event) => changeColour('Green'));
 /*create hover effect*/
 square.addEventListener('mouseover', (event) => changeColour('grey'));
 square.addEventListener('mouseout', (event) => changeColour('red'));
+
+/*creating words generating*/
+var words = document.getElementById('words');
+
+function greeting() {
+    words.innerHTML = "Welcome, to FLatLand <br> I am Cat!"
+}
+
+document.onload = greeting()
 
 
 function createBuzzwordPhrase() {
