@@ -8,6 +8,13 @@ function changeColour(colour) {
 
 square.addEventListener('click', (event) => changeColour('Green'));
 
+function clicked() {
+    //var msg = "Build a <br>" +createBuzzwordPhrase();
+    //words.innerHTML = msg;
+    words.innerHTML = "Build a <br>" +createBuzzwordPhrase();
+}
+square.addEventListener('click', (event) => clicked());
+
 /*create hover effect*/
 square.addEventListener('mouseover', (event) => changeColour('grey'));
 square.addEventListener('mouseout', (event) => changeColour('red'));
@@ -16,7 +23,7 @@ square.addEventListener('mouseout', (event) => changeColour('red'));
 var words = document.getElementById('words');
 
 function greeting() {
-    words.innerHTML = "Welcome, to FLatLand <br> I am Cat!"
+    words.innerHTML = "Welcome, to FlatLand <br> I am Square!"
 }
 
 document.onload = greeting()
